@@ -7,3 +7,52 @@
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+
+// Base styles
+
+body {
+	font-family: 'Raleway', sans-serif;
+	color: #333;
+	padding: 20px;
+}
+
+h1 {
+	font-weight: 300;
+}
+
+h2 {
+	font-weight: 100;
+	color: #666;
+	font-size: 18px;
+}
+
+
+.content {
+	text-align: center;
+}
+
+.section {
+	margin-top: 20px;
+}
+
+
+.add-joy {
+	padding: 10px 20px;
+	font-size: 18px;
+}
+
+.add-joy .new-joy {
+
+}
+
+.joy-list {
+	width: 400px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.joy-list li {
+
+}

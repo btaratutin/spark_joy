@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="content">
 
     <!-- Bootstrap Boilerplate... -->
 
@@ -45,16 +46,21 @@
                 <table class="table table-striped task-table">
 
                     <!-- Table Headings -->
-                    <thead>
-                        <th>Joy</th>
+                    <!-- <thead>
+                        <th></th>
+                        <th></th>
                         <th>&nbsp;</th>
-                    </thead>
+                    </thead> -->
 
                     <!-- Table Body -->
                     <tbody>
-                        @foreach ($joys as $joy)
+                        @foreach ($joys as $key=>$joy)
                             <tr>
-                                <!-- Task Name -->
+                                <td class="table-text">
+                                    <div>{{ $key+1 }}</div>
+                                </td>
+
+
                                 <td class="table-text">
                                     <div>{{ $joy->text }}</div>
                                 </td>
@@ -74,4 +80,5 @@
             </div>
         </div>
     @endif
+</div>
 @endsection
